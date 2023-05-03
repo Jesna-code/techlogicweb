@@ -7,9 +7,12 @@ import { ServiceComponent } from "./service/service.component";
 import { TeamComponent } from "./team/team.component";
 import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { NewsletterComponent } from "./newsletter/newsletter.component";
+import { HeaderComponent } from "./header/header.component";
+import { TestimonialComponent } from "./testimonial/testimonial.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/index", pathMatch: "full" },
+  { path: "", redirectTo: "/header", pathMatch: "full" },
+  { path: "header", component: HeaderComponent },
   { path: "about", component: AboutComponent },
   { path: "contact", component: ContactComponent },
   { path: "project", component: ProjectComponent },
@@ -17,6 +20,7 @@ const routes: Routes = [
   { path: "team", component: TeamComponent },
   { path: "portfolio", component: PortfolioComponent },
   { path: "newsletter", component: NewsletterComponent },
+  { path: "testimonial", component: TestimonialComponent },
 ];
 
 @NgModule({
